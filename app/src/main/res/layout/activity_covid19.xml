@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Covid19Activity">
+
+    <ImageView
+        android:id="@+id/rectangle_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/covid19"
+        android:alpha="0.95" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/settings"/>
+
+    <TextView
+        android:id="@+id/covid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54dp"
+        android:layout_alignTop="@id/rectangle_2"
+        android:text="COVID 19"
+        android:lineHeight="59dp"
+        android:layout_marginTop="-18dp"
+        android:textAppearance="@style/control"
+        android:alpha="0.9" />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/covid"
+        android:layout_marginRight="54dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/ractangle_5"
+        android:alpha="0.3" />
+
+    <TextView
+        android:id="@+id/india"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/rectangle_3"
+        android:text="INDIA"
+        android:lineHeight="59dp"
+        android:layout_marginTop="-18dp"
+        android:textAppearance="@style/control"
+        android:alpha="0.9" />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_toLeftOf="@id/india"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/ractangle_5"
+        android:alpha="0.3" />
+
+    <Button
+        android:id="@+id/knowMore"
+        android:layout_width="146dp"
+        android:layout_height="36dp"
+        android:text="Know more"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/rectangle_3" />
+
+</RelativeLayout>

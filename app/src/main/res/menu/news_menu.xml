@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/all"
+        android:title="All Headlines"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/indian"
+        android:title="Indian Headlines"
+        app:showAsAction="never"/>
+
+</menu>

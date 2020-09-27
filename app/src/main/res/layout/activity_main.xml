@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cases_data"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:tint="#7F7A7A"
+                    android:tintMode="multiply"
+                    app:srcCompat="@drawable/map" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:text="Get Live Updates"/>
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="70dp"
+                    android:text="Get Live updates about all the states\nand districts of India.\nConfirmed . Active . Deaths . Recovered " />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/youtube"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/cases_data"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:tint="#7F7A7A"
+                    android:tintMode="multiply"
+                    app:srcCompat="@drawable/background" />
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/youtube"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Know from Youtube"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:text="Get News . Related Videos . Updates \n. About Corona from Youtube"/>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                ads:adSize="BANNER"
+                android:layout_below="@id/youtube"
+                ads:adUnitId="ca-app-pub-5908325801395911/9613379648">
+            </com.google.android.gms.ads.AdView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/resuorces"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/adView"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:tint="#7F7A7A"
+                    android:tintMode="multiply"
+                    app:srcCompat="@drawable/resources" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Resources"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Get all the Organisations in different cities of\nIndia fighting for Covid 19 and their helpline\nnumbers."/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/news"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/resuorces"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:tint="#7F7A7A"
+                    android:tintMode="multiply"
+                    app:srcCompat="@drawable/news_img" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Top Headlines"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:text="Get to know about Today's Top Headlines\non Covid-19\n. World Top Headlines . Indian Headlines"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@id/news"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:tint="#7F7A7A"
+                    android:tintMode="multiply"
+                    app:srcCompat="@drawable/webview" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/location"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="mapmyindia.com"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginTop="70dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text=". District Hotspots . Treatment Centres \n. Testing Labs . Sample Collection Centres\n. Quanantine Centres from mapmyindia.com"/>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

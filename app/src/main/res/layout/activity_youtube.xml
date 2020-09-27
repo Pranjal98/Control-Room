@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YoutubeActivity">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:scaleY="0.7"
+        android:scaleX="0.7"
+        android:background="@drawable/blackarrow"/>
+
+    <SearchView
+        android:id="@+id/search_youtube"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/backButton"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/ractangle_edit"
+        android:queryHint="Search on YouTube"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_below="@+id/search_youtube">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/youtube_view"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/cuisine_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/youtube_view"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Top Indian New Channels"/>
+
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/cuisine_select"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/abp"
+                        android:id="@+id/punjabi" />
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/zee"
+                        android:id="@+id/gujarati" />
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/aaj_tak"
+                        android:id="@+id/bengali" />
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/india_today"
+                        android:id="@+id/kashmiri" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/topTrandingToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/scrollView1"
+                android:text="Language Preferrence wise"/>
+
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/topTrandingToday"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:alpha="0.8"
+                        android:background="@drawable/ractangle1"
+                        android:text="English"
+                        android:id="@+id/button" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:alpha="0.8"
+                        android:background="@drawable/ractangle1"
+                        android:text="Bengali"
+                        android:id="@+id/button1" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:alpha="0.8"
+                        android:textSize="14dp"
+                        android:background="@drawable/ractangle1"
+                        android:text="Assamese"
+                        android:id="@+id/button2" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:alpha="0.8"
+                        android:textSize="14dp"
+                        android:background="@drawable/ractangle1"
+                        android:text="Hindi"
+                        android:id="@+id/button3" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:alpha="0.8"
+                        android:textSize="14dp"
+                        android:background="@drawable/ractangle1"
+                        android:text="Tamil"
+                        android:id="@+id/button4" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:alpha="0.8"
+                        android:textSize="14dp"
+                        android:background="@drawable/ractangle1"
+                        android:text="Telugu"
+                        android:id="@+id/button5" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:alpha="0.8"
+                        android:background="@drawable/ractangle1"
+                        android:text="Gujarati"
+                        android:id="@+id/button6" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:alpha="0.8"
+                        android:textSize="14dp"
+                        android:background="@drawable/ractangle1"
+                        android:text="Marathi"
+                        android:id="@+id/button7" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:alpha="0.8"
+                        android:textSize="14dp"
+                        android:background="@drawable/ractangle1"
+                        android:text="Urdu"
+                        android:id="@+id/button8" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:alpha="0.8"
+                        android:background="@drawable/ractangle1"
+                        android:text="Kannada"
+                        android:id="@+id/button9" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/top_searches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scrollView2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:text="Top Channels for your Search"/>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/top_searches"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:alpha="0.8"
+                        android:background="@drawable/ractangle1"
+                        android:text="New Button"
+                        android:id="@+id/bsearch1" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:alpha="0.8"
+                        android:background="@drawable/ractangle1"
+                        android:text="New Button"
+                        android:id="@+id/bsearch2" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:text="New Button"
+                        android:textSize="14dp"
+                        android:padding="10dp"
+                        android:alpha="0.8"
+                        android:background="@drawable/ractangle1"
+                        android:id="@+id/bsearch3" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:text="New Button"
+                        android:textSize="14dp"
+                        android:padding="10dp"
+                        android:alpha="0.8"
+                        android:background="@drawable/ractangle1"
+                        android:id="@+id/bsearch4" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:alpha="0.8"
+                        android:textSize="14dp"
+                        android:background="@drawable/ractangle1"
+                        android:text="New Button"
+                        android:id="@+id/bsearch5" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_toLeftOf="@id/logo"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginRight="-15dp"
+        android:text="Powered by ©"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/youtube_icon"/>
+
+</RelativeLayout>

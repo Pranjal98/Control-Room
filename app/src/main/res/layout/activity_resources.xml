@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ResourcesActivity">
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/white"
+        android:visibility="invisible"
+        android:elevation="10dp"/>
+
+    <View
+        android:layout_width="375dp"
+        android:layout_height="375dp"
+        android:layout_marginLeft="-195dp"
+        android:layout_marginTop="-180dp"
+        android:layout_marginRight="-70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.8"
+        android:background="@drawable/ellipse1"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:scaleY="0.7"
+        android:scaleX="0.7"
+        android:background="@drawable/arrow"/>
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@id/backButton"
+        android:layout_toLeftOf="@id/button_open_bottom_sheet"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/ractangle_edit"
+        android:elevation="5dp"
+        android:queryHint="Search your city"/>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@id/backButton"
+        android:layout_toLeftOf="@id/button_open_bottom_sheet"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:alpha="0.2"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/button_open_bottom_sheet"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/filter"/>
+
+    <TextView
+        android:id="@+id/confirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organizations fighting against"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/backButton"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Covid-19"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/confirmed"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="148dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_requests"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <ProgressBar
+        android:elevation="20dp"
+        android:id="@+id/progress_load_photo"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/scroll"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
